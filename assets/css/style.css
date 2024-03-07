@@ -46,7 +46,7 @@ header {
 
 
 /* input principal do site */
-#container-conteudo #box-inputs input {
+#container-conteudo #box-inputs .input {
   padding: 10px;
   margin-top: 60px;
   width: 100%;
@@ -56,6 +56,18 @@ header {
   border: none;
   border-bottom: 1px solid black;
   background-color: transparent;
+}
+
+
+textarea.input{
+  outline: none;
+  font-size: 30px;
+  padding: 30px;
+  margin-top: 15px;
+  text-align: center;
+  resize: none;
+  text-transform: uppercase;
+  border: none;
 }
 
 #container-conteudo #box-paragraph {
@@ -100,12 +112,30 @@ header {
   background-color: #1474e9;
 }
 
-#box-inputs #box-buttons #button-descripto {
+#box-inputs #box-buttons .button-descripto {
   background-color: var(--cor-tercearia);
 }
 
-#box-inputs #box-buttons #button-descripto:hover {
+#box-inputs #box-buttons .button-descripto:hover {
   background-color: gray;
+}
+
+/* botão de copiar */
+.button-copia {
+  width: 220px;
+  padding: 15px;
+  border-radius: 24px;
+  outline: none;
+  border: 1px solid black;
+  font-size: 18px;
+  margin-top: 490px;
+  color: white;
+  background-color: var(--cor-secundaria);
+  cursor: pointer;
+}
+
+.button-copia:hover {
+  background-color: #1474e9;
 }
 
 #box-inputMSG {

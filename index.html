@@ -16,15 +16,15 @@
     <!-- container dos inputs e botoes principais -->
     <section id="container-conteudo">
       <div id="box-inputs">
-          <input type="text" name="input" placeholder="Digite seu texto">
+        <textarea class="input" cols="40" rows="1" placeholder=" Digite seu texto "></textarea>
           <!-- box do paragrafo perto dos botoes -->
           <div id="box-paragraph">
             <img src="./assets/imagens/04 - Vector.png" alt="icone de exclamação"><p>Apenas letras minúsculas e sem acento.</p>
           </div>
           <!-- box dos botoes cripto e descripto -->
           <div id="box-buttons">
-            <button class="button-cripto">Criptografar</button>
-            <button id="button-descripto">Descriptografar</button>
+            <button onclick="criptografarMSG()" class="button-cripto">Criptografar</button>
+            <button onclick="descriptografarMSG()" class="button-descripto">Descriptografar</button>
           </div>
       </div>
       <!-- box da mensagem criptografada -->
