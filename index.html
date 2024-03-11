@@ -1,46 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="/assets/imagens/01 -  favicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <title>Decodificador de texto</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador Alura</title>
+    <link rel="shortcut icon" href="./Imagens/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
-  <!-- Cabeçalho -->
-  <header>
-    <img src="assets/imagens/02 - logoAlura.png" alt="Logo da Alura">
-  </header>
-  <main id="container-geral">
-    <!-- container dos inputs e botoes principais -->
-    <section id="container-conteudo">
-      <div id="box-inputs">
-        <textarea class="input" cols="40" rows="1" placeholder=" Digite seu texto "></textarea>
-          <!-- box do paragrafo perto dos botoes -->
-          <div id="box-paragraph">
-            <img src="./assets/imagens/04 - Vector.png" alt="icone de exclamação"><p>Apenas letras minúsculas e sem acento.</p>
-          </div>
-          <!-- box dos botoes cripto e descripto -->
-          <div id="box-buttons">
-            <button onclick="criptografarMSG()" class="button-cripto">Criptografar</button>
-            <button onclick="descriptografarMSG()" class="button-descripto">Descriptografar</button>
-          </div>
-      </div>
-      <!-- box da mensagem criptografada -->
-      <article id="box-inputMSG">
-        <div id="box-inputconteudo">
-          <img src="./assets/imagens/03 - backgroundRick-png.png" alt="Imagem do Rick">
-          <h2>Nenhuma mensagem encontrada</h2>
-          <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+    <header class="cabecalho">
+        <img src="./Imagens/alura.png" alt="logo alura">
+    </header>
+    <main class="apresentacao">
+        <section class="apresentação_esquerdo"> 
+            <textarea id="input-texto" class="insercao_texto" placeholder="Digite seu texto aqui"></textarea>
+            <div class="mensagem_observacao">
+                <img src="./Imagens/Group.png" alt="sinal de ponto de exclamaçao">
+                <p>ATENÇÃO: Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="botoes">
+                <button onclick="criptografar()" class="botao_ação">Criptografar</button>
+                <button onclick="descriptografar()" class="botao_ação">Descriptografar</button>
+            </div>
+        </section>
+        <div id="output" class="apresentação_direito">
+            <img class="apresent_imagem" src="./Imagens/busca.svg" alt="imagem de um individuo desvendando algo">
+            <h1 class="texto_nao_encontrado">Nenhuma mensagem encontrada!</h1>
+            <span class="texo_digite_texto">Digite um texto que você deseja criptografar ou descriptografar.</span>
         </div>
-      </article>
-    </section>
-  </main>
-  <!-- Rodapé -->
-  <footer>
-    <p>Desenvolvido por Deivison Gracindo</p>
-  </footer>
-  <script src="./assets/javascript/app.js"></script>
+
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Deivison Neri</p>
+    </footer>
+    
+    <script src="./JavaScript/app.js"></script>
 </body>
 </html>
